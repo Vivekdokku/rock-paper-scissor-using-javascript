@@ -1,20 +1,68 @@
 
-#rockimg{
-    height:100px;
-    width: 100px;
-    border-radius: 60px;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-#paperimg{
-    height:100px;
-    width: 100px;
-    border-radius: 60px;
+
+
+#gameboard {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
 }
-#scissorimg{
-    height:100px;
-    width: 100px;
-    border-radius: 60px;
+
+
+#gameboard h3 {
+    margin: 10px 0;
+    color: #333;
 }
-button{
-    background-color: white;
-    
+
+
+#rockimg, #paperimg, #scissorimg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+#rockimg:hover, #paperimg:hover, #scissorimg:hover {
+    transform: scale(1.1);
+}
+
+/* Buttons */
+button {
+    background-color: #fff;
+    width: 120px;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 60px;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: rgb(44, 181, 226);
+    transform: scale(1.05);
+}
+
+button#rockbutton:hover {
+    background-color: #ffcccb;
+}
+
+button#paperbutton:hover {
+    background-color: #d3ffd3;
+}
+
+button#Scissorbutton:hover {
+    background-color: #ffddff;
 }
