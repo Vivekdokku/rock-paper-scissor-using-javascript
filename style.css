@@ -1,0 +1,20 @@
+
+#rockimg{
+    height:100px;
+    width: 100px;
+    border-radius: 60px;
+}
+#paperimg{
+    height:100px;
+    width: 100px;
+    border-radius: 60px;
+}
+#scissorimg{
+    height:100px;
+    width: 100px;
+    border-radius: 60px;
+}
+button{
+    background-color: white;
+    
+}
